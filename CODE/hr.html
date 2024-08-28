@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Resources</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Human Resources</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="inventory.html">Inventory Management</a></li>
+                <li><a href="production.html">Production Planning</a></li>
+                <li><a href="sales.html">Sales & Order Processing</a></li>
+                <li><a href="purchasing.html">Purchasing & Suppliers</a></li>
+                <li><a href="finance.html">Finance & Accounting</a></li>
+                <li><a href="hr.html">Human Resources</a></li>
+                <li><a href="reporting.html">Reporting & Analytics</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Employee Records</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Department</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="employee-list">
+                    <!-- Employee records will be populated here -->
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Add New Employee</h2>
+            <form id="add-employee-form">
+                <label for="employee-id">Employee ID:</label>
+                <input type="text" id="employee-id" required>
+                
+                <label for="employee-name">Name:</label>
+                <input type="text" id="employee-name" required>
+                
+                <label for="position">Position:</label>
+                <input type="text" id="position" required>
+                
+                <label for="department">Department:</label>
+                <input type="text" id="department" required>
+                
+                <button type="submit">Add Employee</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchasing and Supplier Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Purchasing and Supplier Management</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="inventory.html">Inventory Management</a></li>
+                <li><a href="production.html">Production Planning</a></li>
+                <li><a href="sales.html">Sales & Order Processing</a></li>
+                <li><a href="purchasing.html">Purchasing & Suppliers</a></li>
+                <li><a href="finance.html">Finance & Accounting</a></li>
+                <li><a href="hr.html">Human Resources</a></li>
+                <li><a href="reporting.html">Reporting & Analytics</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Supplier List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Supplier ID</th>
+                        <th>Supplier Name</th>
+                        <th>Contact Person</th>
+                        <th>Phone Number</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="supplier-list">
+                    <!-- Supplier items will be populated here -->
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Add New Supplier</h2>
+            <form id="add-supplier-form">
+                <label for="supplier-id">Supplier ID:</label>
+                <input type="text" id="supplier-id" required>
+                
+                <label for="supplier-name">Supplier Name:</label>
+                <input type="text" id="supplier-name" required>
+                
+                <label for="contact-person">Contact Person:</label>
+                <input type="text" id="contact-person" required>
+                
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" required>
+                
+                <button type="submit">Add Supplier</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

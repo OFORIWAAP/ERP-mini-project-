@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production Planning and Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Production Planning and Control</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="inventory.html">Inventory Management</a></li>
+                <li><a href="production.html">Production Planning</a></li>
+                <li><a href="sales.html">Sales & Order Processing</a></li>
+                <li><a href="purchasing.html">Purchasing & Suppliers</a></li>
+                <li><a href="finance.html">Finance & Accounting</a></li>
+                <li><a href="hr.html">Human Resources</a></li>
+                <li><a href="reporting.html">Reporting & Analytics</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Production Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Batch Number</th>
+                        <th>Product Name</th>
+                        <th>Scheduled Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="production-schedule">
+                    <!-- Production schedule items will be populated here -->
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Schedule New Production Batch</h2>
+            <form id="schedule-batch-form">
+                <label for="batch-number">Batch Number:</label>
+                <input type="text" id="batch-number" required>
+                
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" required>
+                
+                <label for="scheduled-date">Scheduled Date:</label>
+                <input type="date" id="scheduled-date" required>
+                
+                <label for="status">Status:</label>
+                <select id="status">
+                    <option value="Planned">Planned</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Completed">Completed</option>
+                </select>
+                
+                <button type="submit">Schedule Batch</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

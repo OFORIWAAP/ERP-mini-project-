@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Organic Skincare ERP Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="inventory.html">Inventory Management</a></li>
+                <li><a href="production.html">Production Planning</a></li>
+                <li><a href="sales.html">Sales & Order Processing</a></li>
+                <li><a href="purchasing.html">Purchasing & Suppliers</a></li>
+                <li><a href="finance.html">Finance & Accounting</a></li>
+                <li><a href="hr.html">Human Resources</a></li>
+                <li><a href="reporting.html">Reporting & Analytics</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <div class="card-icon">📦</div>
+            <h3>Total Inventory Items</h3>
+            <p id="total-inventory">0</p>
+        </section>
+        <section class="card">
+            <div class="card-icon">📄</div>
+            <h3>Pending Orders</h3>
+            <p id="pending-orders">0</p>
+        </section>
+        <section class="card">
+            <div class="card-icon">💳</div>
+            <h3>Recent Transactions</h3>
+            <p id="recent-transactions">0</p>
+        </section>
+    </main>
+    
+    <script src="dashboard.js"></script>
+</body>
+</html>
